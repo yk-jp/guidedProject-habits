@@ -26,6 +26,7 @@
 		F28B5138284485EA00EB8217 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B5137284485EA00EB8217 /* Settings.swift */; };
 		F28B513A28448C6500EB8217 /* UICollectionViewDiffableDataSource+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B513928448C6500EB8217 /* UICollectionViewDiffableDataSource+ViewModel.swift */; };
 		F28B513C28448EE600EB8217 /* NamedSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B513B28448EE600EB8217 /* NamedSectionHeaderView.swift */; };
+		F28B513E284497B200EB8217 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B513D284497B200EB8217 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		F28B5137284485EA00EB8217 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		F28B513928448C6500EB8217 /* UICollectionViewDiffableDataSource+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewDiffableDataSource+ViewModel.swift"; sourceTree = "<group>"; };
 		F28B513B28448EE600EB8217 /* NamedSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedSectionHeaderView.swift; sourceTree = "<group>"; };
+		F28B513D284497B200EB8217 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				F2337A9228442B5900C2EA54 /* AppDelegate.swift */,
 				F2337A9428442B5900C2EA54 /* SceneDelegate.swift */,
 				F2337A9828442B5900C2EA54 /* Main.storyboard */,
+				F28B513D284497B200EB8217 /* User.swift */,
 				F28B512D2844442200EB8217 /* Habit.swift */,
 				F28B512F2844445000EB8217 /* Category.swift */,
 				F28B51312844447200EB8217 /* Color.swift */,
@@ -184,6 +187,7 @@
 				F28B51262844318100EB8217 /* UserCollectionViewController.swift in Sources */,
 				F28B513C28448EE600EB8217 /* NamedSectionHeaderView.swift in Sources */,
 				F28B5138284485EA00EB8217 /* Settings.swift in Sources */,
+				F28B513E284497B200EB8217 /* User.swift in Sources */,
 				F28B512C284433D900EB8217 /* UserDetailViewController.swift in Sources */,
 				F28B51242844317400EB8217 /* HabitCollectionViewController.swift in Sources */,
 				F2337A9328442B5900C2EA54 /* AppDelegate.swift in Sources */,
