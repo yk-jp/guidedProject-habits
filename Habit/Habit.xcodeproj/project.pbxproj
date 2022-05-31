@@ -14,6 +14,8 @@
 		F2337A9F28442B5D00C2EA54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2337A9D28442B5D00C2EA54 /* LaunchScreen.storyboard */; };
 		F2522A5328453F7900511765 /* HabitStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2522A5228453F7900511765 /* HabitStatistics.swift */; };
 		F2522A5528453FB900511765 /* UserCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2522A5428453FB900511765 /* UserCount.swift */; };
+		F27B08282845D1FD0080B3DC /* UserStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B08272845D1FD0080B3DC /* UserStatistics.swift */; };
+		F27B082A2845D21C0080B3DC /* HabitCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B08292845D21C0080B3DC /* HabitCount.swift */; };
 		F28B51222844314500EB8217 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B51212844314500EB8217 /* HomeCollectionViewController.swift */; };
 		F28B51242844317400EB8217 /* HabitCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B51232844317400EB8217 /* HabitCollectionViewController.swift */; };
 		F28B51262844318100EB8217 /* UserCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B51252844318100EB8217 /* UserCollectionViewController.swift */; };
@@ -41,6 +43,8 @@
 		F2337AA028442B5D00C2EA54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2522A5228453F7900511765 /* HabitStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitStatistics.swift; sourceTree = "<group>"; };
 		F2522A5428453FB900511765 /* UserCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCount.swift; sourceTree = "<group>"; };
+		F27B08272845D1FD0080B3DC /* UserStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatistics.swift; sourceTree = "<group>"; };
+		F27B08292845D21C0080B3DC /* HabitCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCount.swift; sourceTree = "<group>"; };
 		F28B51212844314500EB8217 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		F28B51232844317400EB8217 /* HabitCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCollectionViewController.swift; sourceTree = "<group>"; };
 		F28B51252844318100EB8217 /* UserCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				F28B513528444D3400EB8217 /* APIService.swift */,
 				F28B5129284433CF00EB8217 /* HabitDetailViewController.swift */,
 				F28B512B284433D900EB8217 /* UserDetailViewController.swift */,
+				F27B08272845D1FD0080B3DC /* UserStatistics.swift */,
+				F27B08292845D21C0080B3DC /* HabitCount.swift */,
 				F28B51212844314500EB8217 /* HomeCollectionViewController.swift */,
 				F28B51232844317400EB8217 /* HabitCollectionViewController.swift */,
 				F28B51252844318100EB8217 /* UserCollectionViewController.swift */,
@@ -195,10 +201,12 @@
 				F28B513C28448EE600EB8217 /* NamedSectionHeaderView.swift in Sources */,
 				F28B5138284485EA00EB8217 /* Settings.swift in Sources */,
 				F28B513E284497B200EB8217 /* User.swift in Sources */,
+				F27B08282845D1FD0080B3DC /* UserStatistics.swift in Sources */,
 				F28B512C284433D900EB8217 /* UserDetailViewController.swift in Sources */,
 				F28B51242844317400EB8217 /* HabitCollectionViewController.swift in Sources */,
 				F2337A9328442B5900C2EA54 /* AppDelegate.swift in Sources */,
 				F2522A5328453F7900511765 /* HabitStatistics.swift in Sources */,
+				F27B082A2845D21C0080B3DC /* HabitCount.swift in Sources */,
 				F28B51282844318900EB8217 /* LogHabitCollectionViewController.swift in Sources */,
 				F28B512E2844442300EB8217 /* Habit.swift in Sources */,
 				F28B513628444D3400EB8217 /* APIService.swift in Sources */,

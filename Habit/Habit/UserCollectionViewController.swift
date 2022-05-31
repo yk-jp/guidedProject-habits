@@ -11,7 +11,8 @@ private let reuseIdentifier = "Cell"
 
 class UserCollectionViewController: UICollectionViewController {
     typealias DataSourceType = UICollectionViewDiffableDataSource<ViewModel.Section, ViewModel.Item>
-    
+    var updateTimer: Timer?
+
     enum ViewModel {
         typealias Section = Int
         
@@ -52,8 +53,33 @@ class UserCollectionViewController: UICollectionViewController {
         
         update()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        update()
+        
+        updateTimer = Timer.scheduledTimer(withTimeInterval: 1,
+           repeats: true) { _ in
+            self.update()
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        updateTimer?.invalidate()
+        updateTimer = nil
+    }
 
-   
+    @IBSegueAction func showUserDetail(_ coder: NSCoder, sender: UICollectionViewCell?) -> UserDetailViewController? {
+        guard let cell = sender, let indexPath = collectionView.indexPath(for: cell),
+                let item = dataSource.itemIdentifier(for: indexPath) else {
+                return nil
+            }
+        return UserDetailViewController(coder: coder, user: item.user)
+    }
+  
     func update() {
         usersRequestTask?.cancel()
         usersRequestTask = Task {
