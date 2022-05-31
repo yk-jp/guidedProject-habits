@@ -16,6 +16,7 @@
 		F2522A5528453FB900511765 /* UserCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2522A5428453FB900511765 /* UserCount.swift */; };
 		F27B08282845D1FD0080B3DC /* UserStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B08272845D1FD0080B3DC /* UserStatistics.swift */; };
 		F27B082A2845D21C0080B3DC /* HabitCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B08292845D21C0080B3DC /* HabitCount.swift */; };
+		F27B082C2845DCE20080B3DC /* LoggedHabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B082B2845DCE20080B3DC /* LoggedHabit.swift */; };
 		F28B51222844314500EB8217 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B51212844314500EB8217 /* HomeCollectionViewController.swift */; };
 		F28B51242844317400EB8217 /* HabitCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B51232844317400EB8217 /* HabitCollectionViewController.swift */; };
 		F28B51262844318100EB8217 /* UserCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B51252844318100EB8217 /* UserCollectionViewController.swift */; };
@@ -45,6 +46,7 @@
 		F2522A5428453FB900511765 /* UserCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCount.swift; sourceTree = "<group>"; };
 		F27B08272845D1FD0080B3DC /* UserStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatistics.swift; sourceTree = "<group>"; };
 		F27B08292845D21C0080B3DC /* HabitCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCount.swift; sourceTree = "<group>"; };
+		F27B082B2845DCE20080B3DC /* LoggedHabit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedHabit.swift; sourceTree = "<group>"; };
 		F28B51212844314500EB8217 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		F28B51232844317400EB8217 /* HabitCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCollectionViewController.swift; sourceTree = "<group>"; };
 		F28B51252844318100EB8217 /* UserCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				F28B51232844317400EB8217 /* HabitCollectionViewController.swift */,
 				F28B51252844318100EB8217 /* UserCollectionViewController.swift */,
 				F28B51272844318900EB8217 /* LogHabitCollectionViewController.swift */,
+				F27B082B2845DCE20080B3DC /* LoggedHabit.swift */,
 				F28B513928448C6500EB8217 /* UICollectionViewDiffableDataSource+ViewModel.swift */,
 				F28B513B28448EE600EB8217 /* NamedSectionHeaderView.swift */,
 				F2337A9B28442B5D00C2EA54 /* Assets.xcassets */,
@@ -194,6 +197,7 @@
 			files = (
 				F2522A5528453FB900511765 /* UserCount.swift in Sources */,
 				F28B51222844314500EB8217 /* HomeCollectionViewController.swift in Sources */,
+				F27B082C2845DCE20080B3DC /* LoggedHabit.swift in Sources */,
 				F28B51302844445000EB8217 /* Category.swift in Sources */,
 				F28B513A28448C6500EB8217 /* UICollectionViewDiffableDataSource+ViewModel.swift in Sources */,
 				F28B51322844447200EB8217 /* Color.swift in Sources */,

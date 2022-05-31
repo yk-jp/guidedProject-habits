@@ -14,6 +14,9 @@ struct Settings {
         static let followedUserIDs = "followedUserIDs"
     }
     
+    let currentUser = User(id: "activeUser", name: "Active User", color: nil, bio: nil)
+    
+    
     var followedUserIDs: [String] {
         get {
             return unarchiveJSON(key: Setting.followedUserIDs) ?? []
