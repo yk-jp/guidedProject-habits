@@ -77,3 +77,9 @@ struct LogHabitRequest: APIRequest {
         return try! encoder.encode(loggedHabit)
     }
 }
+
+struct CombinedStatisticsRequest: APIRequest {
+    typealias Response = CombinedStatistics
+    
+    var path: String { "/combinedStats" }
+}
