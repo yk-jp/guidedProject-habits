@@ -38,6 +38,15 @@ class UserDetailViewController: UIViewController {
     
     enum ViewModel {
         enum Section: Hashable, Comparable {
+            var sectionColor: UIColor {
+                switch self {
+                case .leading:
+                    return .systemGray4
+                case .category(let category):
+                    return category.color.uiColor
+                }
+            }
+            
             case leading
             case category(_ category: Category)
             
@@ -83,6 +92,15 @@ class UserDetailViewController: UIViewController {
             imageRequestTask = nil
         }
         
+        view.backgroundColor = user.color?.uiColor ?? .white
+        
+        let tabBarAppearance = UITabBarAppearance()
+        tabBarAppearance.backgroundColor = .quaternarySystemFill
+        tabBarController?.tabBar.scrollEdgeAppearance = tabBarAppearance
+        let navBarAppearance = UINavigationBarAppearance()
+        navBarAppearance.backgroundColor = .quaternarySystemFill
+        navigationItem.scrollEdgeAppearance = navBarAppearance
+
         update()
     }
     
@@ -178,6 +196,8 @@ class UserDetailViewController: UIViewController {
                 header.nameLabel.text = category.name
             }
             
+            header.backgroundColor = section.sectionColor
+
             return header
         }
         

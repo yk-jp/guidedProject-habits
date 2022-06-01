@@ -94,5 +94,32 @@ class LogHabitCollectionViewController: HabitCollectionViewController {
             try? await LogHabitRequest(loggedHabit: loggedHabit).send()
         }
     }
-
+    
+    override func configureCell(_ cell: UICollectionViewListCell, withItem item: ViewModel.Item) {
+        cell.configurationUpdateHandler =  { cell, state in
+            var content = UIListContentConfiguration.cell().updated(for: state)
+            content.text = item.name
+            content.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 11, leading: 8, bottom: 11, trailing: 8)
+            content.textProperties.alignment = .center
+            cell.contentConfiguration = content
+            
+            var backgroundConfiguration = UIBackgroundConfiguration.listPlainCell().updated(for: state)
+            if Settings.shared.favoriteHabits.contains(item) {
+                backgroundConfiguration.backgroundColor = favoriteHabitColor
+            } else {
+                backgroundConfiguration.backgroundColor = .systemGray6
+            }
+            if state.isHighlighted {
+                backgroundConfiguration.backgroundColorTransformer = .init { $0.withAlphaComponent(0.3) }
+            }
+            backgroundConfiguration.cornerRadius = 8
+            cell.backgroundConfiguration = backgroundConfiguration
+        }
+        
+        cell.layer.shadowRadius = 3
+        cell.layer.shadowColor = UIColor.systemGray3.cgColor
+        cell.layer.shadowOffset = CGSize(width: 0, height: 2)
+        cell.layer.shadowOpacity = 1
+        cell.layer.masksToBounds = false
+    }
 }

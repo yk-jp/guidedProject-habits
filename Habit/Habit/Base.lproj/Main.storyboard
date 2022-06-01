@@ -66,6 +66,11 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <view contentMode="scaleToFill" id="4Nb-5r-dKY">
+                                            <rect key="frame" x="-358" y="960" width="414" height="896"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" systemColor="labelColor"/>
+                                        </view>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Ova-Jg-VAa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1RG-eH-BCg" secondAttribute="leading" constant="8" id="0dJ-6z-Vgc"/>
@@ -100,19 +105,27 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="va7-8Q-OYh">
-                                            <rect key="frame" x="32" y="41" width="369" height="120"/>
+                                            <rect key="frame" x="32" y="41" width="369" height="118.5"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QhL-qM-efq">
+                                            <rect key="frame" x="20.5" y="167.5" width="368" height="1.5"/>
+                                            <color key="backgroundColor" systemColor="labelColor"/>
+                                        </view>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="QhL-qM-efq" firstAttribute="centerX" secondItem="cSe-Nw-Txx" secondAttribute="centerX" id="16a-Lt-uQT"/>
+                                        <constraint firstAttribute="bottom" secondItem="QhL-qM-efq" secondAttribute="bottom" id="3BB-vJ-mIU"/>
                                         <constraint firstItem="va7-8Q-OYh" firstAttribute="top" secondItem="YVX-Ae-MPv" secondAttribute="bottom" constant="16" id="9GV-39-ub3"/>
                                         <constraint firstAttribute="trailing" secondItem="va7-8Q-OYh" secondAttribute="trailing" constant="8" id="9Id-J1-BaY"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YVX-Ae-MPv" secondAttribute="trailing" constant="8" id="FCw-vg-sMq"/>
                                         <constraint firstItem="va7-8Q-OYh" firstAttribute="leading" secondItem="YVX-Ae-MPv" secondAttribute="leading" constant="24" id="FXx-A2-spF"/>
-                                        <constraint firstAttribute="bottom" secondItem="va7-8Q-OYh" secondAttribute="bottom" constant="8" id="T0v-OM-RYX"/>
+                                        <constraint firstItem="QhL-qM-efq" firstAttribute="width" secondItem="cSe-Nw-Txx" secondAttribute="width" multiplier="0.9" id="Vca-km-HSM"/>
+                                        <constraint firstItem="QhL-qM-efq" firstAttribute="top" secondItem="va7-8Q-OYh" secondAttribute="bottom" constant="8" id="Wsb-hH-v8S"/>
                                         <constraint firstItem="YVX-Ae-MPv" firstAttribute="leading" secondItem="cSe-Nw-Txx" secondAttribute="leading" constant="8" id="pgK-VY-AYt"/>
+                                        <constraint firstItem="QhL-qM-efq" firstAttribute="height" secondItem="cSe-Nw-Txx" secondAttribute="height" multiplier="0.01" id="r1M-9L-EaZ"/>
                                         <constraint firstItem="YVX-Ae-MPv" firstAttribute="top" secondItem="cSe-Nw-Txx" secondAttribute="top" constant="8" id="x1G-Ty-tjw"/>
                                     </constraints>
                                 </collectionViewCellContentView>
@@ -120,6 +133,8 @@
                                 <connections>
                                     <outlet property="primaryTextLabel" destination="YVX-Ae-MPv" id="g8O-aD-c86"/>
                                     <outlet property="secondaryTextLabel" destination="va7-8Q-OYh" id="AwU-h2-GbA"/>
+                                    <outlet property="separatorLineHeightConstraint" destination="r1M-9L-EaZ" id="uDW-PF-Eso"/>
+                                    <outlet property="separatorLineView" destination="QhL-qM-efq" id="o4s-qf-DLx"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -491,6 +506,9 @@
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
